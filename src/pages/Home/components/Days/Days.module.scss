@@ -1,0 +1,109 @@
+@import "../../../../styles/variables.scss";
+
+.days {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(#{--components-background-default});
+}
+
+.card {
+    flex: 0 1 13%;
+    background-color: #fff;
+    background-color: var(#{--card-background-default});
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    svg {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+}
+
+.card:hover {
+    box-shadow: var(#{--card-shadow-default});
+}
+
+.day {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(#{--text-color-default});
+    margin-bottom: 7px;
+}
+
+.day_info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $light-grey-color;
+    margin-bottom: 10px;
+}
+
+.temp_day {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(#{--text-color-default});
+    margin-bottom: 7px;
+}
+
+.temp_night {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $light-grey-color;
+    margin-bottom: 7px;
+}
+
+.info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $light-grey-color;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.cancel, .tab {
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 5px;
+    padding: 9px 20px;
+    background-color: var(#{--components-background-default});
+    margin-right: 15px;
+    color: var(#{--text-color-default});
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tab {
+    &.active {
+        background: $light-temp-color;
+        color: #fff;
+    }
+}
+
+.cancel {
+    margin-right: 0;
+}
+
+.tab__wrapper {
+    display: flex;
+}

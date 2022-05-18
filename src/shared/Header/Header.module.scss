@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper:last-child {
+    margin-right: 20px;
+}
+
+.logo {
+    margin-right: 20px;
+    svg {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: $light-temp-color;
+}
+
+.change_theme {
+    margin-right: 10px;
+}
+
+.change_theme:hover {
+    cursor: pointer;
+}

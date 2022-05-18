@@ -1,0 +1,47 @@
+@import "../../../../styles/variables.scss";
+
+.this__day {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    background: var(#{--components-background-default});
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.top__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.this__temp {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 117px;
+    color: $light-temp-color;
+}
+
+.this__day_day {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(#{--text-color-default});
+    margin-top: -14px;
+}
+
+.this__time {
+    margin-top: 31px;
+    margin-bottom: 7px;
+}
+
+.this__time,
+.this__city {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: $light-grey-color;
+}
